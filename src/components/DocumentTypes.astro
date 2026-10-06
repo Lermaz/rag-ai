@@ -1,0 +1,85 @@
+<section id="documents">
+	<div class="wrap">
+		<h2>What you hand it.</h2>
+		<p class="intro">The assistant can only talk about the documents you publish.</p>
+		<ul>
+			<li>
+				<p class="file">faq.md</p>
+				<h3>FAQs</h3>
+				<p>Shipping times, sizing, hours — the questions your inbox already repeats.</p>
+			</li>
+			<li>
+				<p class="file">returns-policy.pdf</p>
+				<h3>Policies</h3>
+				<p>Returns, warranties, privacy. The rules you do not want paraphrased wrong.</p>
+			</li>
+			<li>
+				<p class="file">catalog.csv</p>
+				<h3>Catalogs</h3>
+				<p>Products, specs, and what you actually sell, so the answer matches the listing.</p>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<style>
+	section {
+		padding: 24px 0 72px;
+	}
+
+	h2 {
+		margin: 0;
+		font-family: var(--serif);
+		font-size: clamp(32px, 4vw, 44px);
+		font-weight: 560;
+		letter-spacing: -0.03em;
+		line-height: 1.1;
+	}
+
+	.intro {
+		margin: 12px 0 28px;
+		color: var(--muted);
+		font-size: 20px;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 18px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		background: var(--raised);
+		border: 1px solid var(--line);
+		border-radius: 18px;
+		padding: 22px;
+	}
+
+	.file {
+		margin: 0 0 20px;
+		color: var(--green);
+		font-family: var(--mono);
+		font-size: 13px;
+	}
+
+	h3 {
+		margin: 0 0 8px;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	li p:last-child {
+		margin: 0;
+		color: var(--muted);
+		font-size: 17px;
+	}
+
+	@media (max-width: 800px) {
+		ul {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
