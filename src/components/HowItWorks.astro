@@ -1,0 +1,83 @@
+<section id="how-it-works">
+	<div class="wrap">
+		<h2>Three steps. Then it is on your site.</h2>
+		<ol>
+			<li>
+				<span>01</span>
+				<h3>Upload</h3>
+				<p>FAQs, policies, and catalogs. Those files are the only source Folio is allowed to use.</p>
+			</li>
+			<li>
+				<span>02</span>
+				<h3>Answer</h3>
+				<p>
+					Customers ask in plain language. Replies stay inside those documents and name the file
+					they came from.
+				</p>
+			</li>
+			<li>
+				<span>03</span>
+				<h3>Embed</h3>
+				<p>Paste one script tag. The assistant shows up on your site and keeps citing your files.</p>
+			</li>
+		</ol>
+	</div>
+</section>
+
+<style>
+	section {
+		padding: 72px 0;
+	}
+
+	h2 {
+		margin: 0 0 32px;
+		font-family: var(--serif);
+		font-size: clamp(32px, 4vw, 44px);
+		font-weight: 560;
+		letter-spacing: -0.03em;
+		line-height: 1.1;
+	}
+
+	ol {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 18px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	li {
+		background: var(--raised);
+		border: 1px solid var(--line);
+		border-radius: 18px;
+		padding: 22px;
+	}
+
+	span {
+		display: block;
+		margin-bottom: 28px;
+		color: var(--green);
+		font-family: var(--serif);
+		font-size: 28px;
+		font-weight: 560;
+	}
+
+	h3 {
+		margin: 0 0 8px;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 17px;
+	}
+
+	@media (max-width: 800px) {
+		ol {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

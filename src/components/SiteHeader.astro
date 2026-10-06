@@ -1,0 +1,87 @@
+<header>
+	<div class="wrap bar">
+		<a class="mark" href="/">
+			<svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+				<rect width="32" height="32" rx="7" fill="currentColor"></rect>
+				<path fill="#f4efe6" d="M9 8h9.2L23 12.8V24H9V8z"></path>
+				<path fill="currentColor" d="M18.2 8.8v4.2h4.2z"></path>
+			</svg>
+			Folio
+		</a>
+		<nav>
+			<a href="#how-it-works">How it works</a>
+			<a href="#embed">Embed</a>
+			<a class="cta" href="#embed">Get the snippet</a>
+		</nav>
+	</div>
+</header>
+
+<style>
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: color-mix(in srgb, var(--paper) 88%, transparent);
+		backdrop-filter: blur(14px);
+		border-bottom: 1px solid var(--line);
+	}
+
+	.bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		min-height: 72px;
+	}
+
+	.mark {
+		display: inline-flex;
+		align-items: center;
+		gap: 10px;
+		color: var(--green);
+		font-family: var(--serif);
+		font-size: 22px;
+		font-weight: 640;
+		letter-spacing: -0.03em;
+		text-decoration: none;
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 22px;
+	}
+
+	nav a {
+		color: var(--muted);
+		font-size: 16px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	nav a:hover {
+		color: var(--ink);
+	}
+
+	.cta {
+		color: var(--paper) !important;
+		background: var(--green);
+		border-radius: 999px;
+		padding: 10px 16px;
+	}
+
+	.cta:hover {
+		background: #143528;
+		color: var(--paper) !important;
+	}
+
+	@media (max-width: 640px) {
+		.bar {
+			min-height: 64px;
+		}
+
+		nav a:not(.cta) {
+			display: none;
+		}
+	}
+</style>
